@@ -28,7 +28,7 @@ def user_data() -> dict[str, str]:
         "phone": fake.phone_number(),
         "month": dob.strftime("%B"),
         "year": dob.strftime("%Y"),
-        "day": dob.strftime("%#d"),
+        "day": str(dob.day),
         "newsletter": fake.boolean(),
         "optin": fake.boolean(),
         "card_number": fake.credit_card_number(),
